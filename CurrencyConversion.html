@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 30%;
+        }
+        td {
+            text-align: center;
+        }
+        button {
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><label><input type="text" id="input"></label></td>
+            <td>
+                <select name="Currency" id="FCurrency">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="Currency" id="TCurrency">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button id="ConVert" style="background-color: mediumpurple">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td><div id="Result" style="color: blue" ></div></td>
+        </tr>
+    </table>
+
+
+</body>
+<script src="CurrencyConversion.js"></script>
+</html>
