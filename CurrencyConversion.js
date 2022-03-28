@@ -5,11 +5,8 @@ function click(){
     let amount = document.getElementById('input').value;
     let fCurrency = document.getElementById('FCurrency').value;
     let tCurrency = document.getElementById('TCurrency').value;
-    if(fCurrency == 'VND' && tCurrency == 'USD'){
-        document.getElementById('Result').innerHTML = 'Result: '+ amount/23000 + 'USD';
-    }
-    if (fCurrency == 'USD' && tCurrency == 'VND'){
-        document.getElementById('Result').innerHTML = 'Result: ' + amount * 23000 + 'VND';
-    }
+    let result;
+    result = amount * tCurrency / fCurrency;
+    document.getElementById('Result').innerHTML = 'Result: ' + result;
 }
 
